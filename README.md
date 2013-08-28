@@ -58,6 +58,6 @@
 ```
 ##Links:
 - Plugin page <http://db.vinicius-stutz.com/u/28591707/GitHub/jquery.minimalTabs/index.html>
-- Official website <http://www.vinicius-stut.com/>
+- Official website <http://www.vinicius-stutz.com/>
 
 Enjoy!
