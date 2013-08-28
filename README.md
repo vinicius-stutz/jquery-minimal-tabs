@@ -57,7 +57,7 @@
 		</div>
 ```
 ##Links:
-- Plugin page <http://db.vinicius-stutz.com/u/28591707/GitHub/jquery.minimalTabs/index.html>
+- Plugin page <http://vinicius-stutz.github.io/jquery.minimalTabs>
 - Official website <http://www.vinicius-stutz.com/>
 
 Enjoy!
