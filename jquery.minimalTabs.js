@@ -4,7 +4,7 @@
 
 /**
 *
-* https://github.com/blablablabla
+* https://www.vinicius-stutz.com
 * Version: 0.2 of 22 Nov 2013
 * Copyright 2013 - Vinícius Stutz
 * Licensed under the MIT license
