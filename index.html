@@ -5,69 +5,119 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<title>Minimal Tabs</title>
 
-		<link rel="stylesheet" type="text/css" href="http://dl.dropboxusercontent.com/u/28591707/GitHub/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="http://dl.dropboxusercontent.com/u/28591707/GitHub/jquery.minimalTabs/jquery.minimalTabs.css" />
+		<link rel="stylesheet" type="text/css" href="http://db.vinicius-stutz.com/u/28591707/GitHub/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="http://db.vinicius-stutz.com/u/28591707/GitHub/jquery.minimalTabs.0.2/jquery.minimalTabs.css" />
 
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
-		<script src="http://dl.dropboxusercontent.com/u/28591707/GitHub/jquery.minimalTabs/jquery.minimalTabs.js"></script>
+		<script src="http://db.vinicius-stutz.com/u/28591707/GitHub/jquery.minimalTabs.0.2/jquery.minimalTabs.js"></script>
 
 		<script type="text/javascript">
 			$(document).ready(function() {
-				
-				$.minimalTabs();
-				$("#tab_1").click();
+
+				$("#MyNewTabs").minimalTabs();
+				$("#TabTitleS1").click();
+
+				$("#MyOldTabs").minimalTabs();
+				$("#TabTitle3").click();
 
 			});
 		</script>
 	
 	</head>
 	<body>
-		<h1>Minimal Tabs</h1>
+		<h1>Minimal Tabs v0.2</h1>
 		
 		<p><strong>Minimal Tabs plugin for jQuery</strong></p>
 		
+		<ul>
+			<li><a href="http://vinicius-stutz.github.io/jquery.minimalTabs">See the project page on GitHub &raquo;</a></li>
+			<li><a href="http://github.com/vinicius-stutz">See the others projects on GitHub &raquo;</a></li>
+		</ul>
+
 		<h2>How to use?</h2>
 		
 		<ol>
 			<li>In <code>$(document).ready(function(){});</code> section;</li>
-			<li>Put <code>$.minimalTabs();</code> code;</li>
-			<li>You can add <code>$("#tab_1").click();</code> to start with a tab clicked;</li>
+			<li>Put <code>$("#ElementId").minimalTabs();</code> code (only ID, please);</li>
+			<li>You can add <code>$("#YourTabTitle").click();</code> to start with a tab clicked;</li>
 			<li>Stylize the CSS with your preferences;</li>
 			<li>Done!</li>
 		</ol>
 
 		<h2>Sample:</h2>
 
-		<div id="Container">
-			<p id="Tabs">
-				<a href="#tab1" id="tab_1" class="tabs">Aba um</a>
-				<a href="#tab2" id="tab_2" class="tabs">Aba dois</a>
-				<a href="#tab3" id="tab_3" class="tabs">Aba três</a>
-			</p>
-			<ul id="Content">
-				<li id="tab1" class="tab-content">
-					<p>Conteúdo da primeira aba.</p>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-				</li>
-				<li id="tab2" class="tab-content">
-					<p>Conteúdo da segunda aba.</p>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-				</li>
-				<li id="tab3" class="tab-content">
-					<p>Conteúdo da terceira aba.</p>
-					<ol>
-						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-						<li>Aenean commodo ligula eget dolor.</li>
-						<li>Aenean massa.</li>
-					</ol>
-					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-				</li>
-			</ul>
-		</div>
+        <h5 style="margin: 20px;">Amazing: Now you can use multiple groups with tabs!</h5>
+
+        <div id="MyNewTabs" class="tabs-container">
+            <p class="tabs">
+                <a href="#Stab1" id="TabTitleS1">Multiple groups</a>
+                <a href="#Stab2" id="TabTitleS2">Responsive</a>
+                <a href="#Stab3" id="TabTitleS3">Responsive Test</a>
+                <a href="#Stab4" id="TabTitleS4">Responsive Test</a>
+				<a href="#Stab5" id="TabTitleS5">Responsive Test</a>
+                <a href="#Stab6" id="TabTitleS6">Images</a>
+            </p>
+            <ul class="tabs-content">
+                <li id="Stab1" class="tab-content">
+                    <p>As stated above, you can now have multiple groups of tabs across your page. Try it!</p>
+                    <p>Remember to assign different ID's for each group, including the ID of each tab!</p>
+                </li>
+                <li id="Stab2" class="tab-content">
+                    <p>The tabs are now responsive. Try resizing your browser and check it out!</p>
+                </li>
+                <li id="Stab3" class="tab-content">
+                    <p>The tabs are now responsive. Try resizing your browser and check it out! :-|</p>
+                </li>
+                <li id="Stab4" class="tab-content">
+                    <p>The tabs are now responsive. Try resizing your browser and check it out! :-)</p>
+                </li>
+                <li id="Stab5" class="tab-content">
+                    <p>The tabs are now responsive. Try resizing your browser and check it out! :-D</p>
+                </li>
+                <li id="Stab6" class="tab-content">
+                    <p>Insert and use images inside your tab content!</p>
+                    <p>
+                    	<img src="http://www.historicalstockphotos.com/images/070225200121_Rosie_the_Riveter_We_Can_Do_It_LG.jpg" alt="image" />
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+		<h5 style="margin: 20px;">In this case, start this group with the third tab open.</h5>
+
+        <div id="MyOldTabs" class="tabs-container">
+            <p class="tabs">
+                <a href="#Tab1" id="TabTitle1">Tab one</a>
+                <a href="#Tab2" id="TabTitle2">Tab two</a>
+                <a href="#Tab3" id="TabTitle3">Tab three</a>
+            </p>
+            <ul class="tabs-content">
+                <li id="Tab1" class="tab-content">
+                    <p>Content of first tab.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </li>
+                <li id="Tab2" class="tab-content">
+                    <p>Content of second tab.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </li>
+                <li id="Tab3" class="tab-content">
+                    <p>Content of third tab.</p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                        <li>Aenean commodo ligula eget dolor.</li>
+                        <li>Aenean massa.</li>
+                    </ol>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </li>
+            </ul>
+        </div>
 
 		<h2>Features:</h2>
-		<p>Very easy to use! Too light to load (only 5 KB, this plugin and your style together)!</p>
+		<p>Very easy to use! Too light to load (only 6 KB, this plugin and your style together)!</p>
 		<p>Supports keyboard navigation (using the "tab" and then "enter" on the desired tab)!</p>
+        <p>Now you can use multiple groups with tabs</p>
+        <p>The tabs are now responsive</p>
+        <p>Insert and use images inside your tab content</p>
 		
 		<h2>Install:</h2>
 
@@ -82,7 +132,9 @@
 		<pre><code>
 		&lt;script type=&quot;text/javascript&quot;&gt;
 			$(document).ready(function() {
-				$.minimalTabs();
+				$("#MyTabs").minimalTabs();
+				// Optional
+				// $("#TabTitle2").click();
 			});
 		&lt;/script&gt;
 		</code></pre>
@@ -90,33 +142,27 @@
 		<h2>The HTML:</h2>
 		
 		<pre><code>
-		&lt;div id=&quot;Container&quot;&gt;
-			&lt;p id=&quot;Tabs&quot;&gt;
-				&lt;a href=&quot;#tab1&quot; id=&quot;tab_1&quot; class=&quot;tabs&quot;&gt;Aba um&lt;/a&gt;
-				&lt;a href=&quot;#tab2&quot; id=&quot;tab_2&quot; class=&quot;tabs&quot;&gt;Aba dois&lt;/a&gt;
-				&lt;a href=&quot;#tab3&quot; id=&quot;tab_3&quot; class=&quot;tabs&quot;&gt;Aba tr&ecirc;s&lt;/a&gt;
-			&lt;/p&gt;
-			&lt;ul id=&quot;Content&quot;&gt;
-				&lt;li id=&quot;tab1&quot; class=&quot;tab-content&quot;&gt;
-					&lt;p&gt;Conte&uacute;do da primeira aba.&lt;/p&gt;
-					&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
-				&lt;/li&gt;
-				&lt;li id=&quot;tab2&quot; class=&quot;tab-content&quot;&gt;
-					&lt;p&gt;Conte&uacute;do da segunda aba.&lt;/p&gt;
-					&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.&lt;/p&gt;
-				&lt;/li&gt;
-				&lt;li id=&quot;tab3&quot; class=&quot;tab-content&quot;&gt;
-					&lt;p&gt;Conte&uacute;do da terceira aba.&lt;/p&gt;
-					&lt;ol&gt;
-						&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-						&lt;li&gt;Aenean commodo ligula eget dolor.&lt;/li&gt;
-						&lt;li&gt;Aenean massa.&lt;/li&gt;
-					&lt;/ol&gt;
-					&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;
-				&lt;/li&gt;
-			&lt;/ul&gt;
-		&lt;/div&gt;
+        &lt;div id=&quot;MyTabs&quot; class=&quot;tabs-container&quot;&gt;
+            &lt;p class=&quot;tabs&quot;&gt;
+                &lt;a href=&quot;#Tab1&quot; id=&quot;TabTitle1&quot;&gt;Tab one&lt;/a&gt;
+                &lt;a href=&quot;#Tab2&quot; id=&quot;TabTitle2&quot;&gt;Tab two&lt;/a&gt;
+                &lt;a href=&quot;#Tab3&quot; id=&quot;TabTitle3&quot;&gt;Tab three&lt;/a&gt;
+            &lt;/p&gt;
+            &lt;ul class=&quot;tabs-content&quot;&gt;
+                &lt;li id=&quot;Tab1&quot; class=&quot;tab-content&quot;&gt;
+                    &lt;p&gt;Content of first tab.&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;Tab2&quot; class=&quot;tab-content&quot;&gt;
+                    &lt;p&gt;Content of second tab.&lt;/p&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;Tab3&quot; class=&quot;tab-content&quot;&gt;
+                    &lt;p&gt;Content of third tab.&lt;/p&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
 		</code></pre>
+
+		<a href="http://www.vinicius-stutz.com/">&copy;2013 - Vinicius-Stutz.com</a>
 
 	</body>
 </html>
