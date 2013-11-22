@@ -12,6 +12,9 @@
 ##Features:
 - Very easy to use! Too light to load (only 6 KB, this plugin and your style together)
 - Supports keyboard navigation (using the "tab" and then "enter" on the desired tab)
+- Now you can use multiple groups with tabs
+- The tabs are now responsive
+- Insert and use images inside your tab content
  
 ##Install:
 ```html
