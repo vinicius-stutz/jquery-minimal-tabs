@@ -4,8 +4,8 @@
 
 ##How to use?
 - In `$(document).ready(function(){});` section;
-- Put `$("#MyTabs").minimalTabs();` code;
-- You can add `$("#Tab1").click();` to start with a tab clicked;
+- Put `$("#YourTab").minimalTabs();` code (only ID, please);;
+- You can add `$("#YourTabTitle").click();` to start with a tab clicked;
 - Stylize the CSS with your preferences;
 - Done!
 
