@@ -1,28 +1,28 @@
 # Minimal Tabs for jQuery
 
-####Minimal Tabs plugin for jQuery
+## Minimal Tabs plugin for jQuery
 
-##How to use?
+### How to use?
 - In `$(document).ready(function(){});` section;
 - Put `$("#YourTab").minimalTabs();` code (only ID, please);;
 - You can add `$("#YourTabTitle").click();` to start with a tab clicked;
 - Stylize the CSS with your preferences;
 - Done!
 
-##Features:
+### Features:
 - Very easy to use! Too light to load (only 6 KB, this plugin and your style together)
 - Supports keyboard navigation (using the "tab" and then "enter" on the desired tab)
 - Now you can use multiple groups with tabs
 - The tabs are now responsive
 - Insert and use images inside your tab content
  
-##Install:
+### Install:
 ```html
 <link rel="stylesheet" type="text/css" href="jquery.minimalTabs.css" />
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="jquery.minimalTabs.js"></script>
 ```
-##The code:
+### The code:
 ```html
 <script type="text/javascript">
     $(document).ready(function() {
@@ -30,7 +30,7 @@
     });
 </script>
 ```
-##The html:
+### The html:
 ```html
 <div id="MyTabs" class="tabs-container">
     <p class="tabs">
@@ -51,11 +51,11 @@
     </ul>
 </div>
 ```
-##Links:
+### Links:
 - Plugin page <http://vinicius-stutz.github.io/jquery.minimalTabs>
 - Official website <http://www.vinicius-stutz.com/>
 
-##MIT License
+### MIT License
 The MIT License (MIT)
 
 Copyright (c) 2013 Vinícius Stutz
